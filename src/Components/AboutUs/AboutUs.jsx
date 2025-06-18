@@ -1,11 +1,9 @@
+
 import React from 'react'
 
 export const AboutUs = () => {
   return (
-    <>
-    chris
-    </>
+    <div>AboutUs</div>
   )
 }
-
-export default AboutUs;
+ export default AboutUs;

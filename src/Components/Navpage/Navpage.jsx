@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './Navpage.css';
+import { Link } from 'react-router-dom';
 
 export const Navpage = () => {
   return (
@@ -8,11 +9,11 @@ export const Navpage = () => {
         <nav className="nav">
            
             <ul>
-                <link to="/">Homepage</link>
-                <link to="/AboutUs">About Us</link>
-                <link to="/Services">Services</link>
-                <link to="/Contact">Contact</link>
-                <link to="/Login">Login</link>
+                <Link to="/HomePage">Home</Link>
+                <Link to="/AboutUs">About Us</Link>
+                <Link to="/Services">Services</Link>
+                <Link to="/Contact">Contact</Link>
+                <Link to="/Login">Login</Link>
             </ul>
         </nav>
     </div>

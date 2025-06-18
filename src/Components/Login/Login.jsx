@@ -14,7 +14,10 @@ const Login = ({ setAuth }) => {
     // Simple authentication check
     if (username === 'admin' && password === 'password') {
       setAuth(true);
-      navigate('/dashboard');
+      navigate('/Services'); // Navigate to the Services page
+    } else if (username === 'user' && password === 'userpass') {
+      setAuth(true);
+      navigate('/Services'); // Navigate to the Services page
     } else {
       alert('Invalid credentials');
     }

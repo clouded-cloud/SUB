@@ -1,9 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export const Services = () => {
+
+
+
+const Services = ({ setAuth }) => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setAuth(false);
+    navigate('/');
+  };
+
   return (
-    <div>Services</div>
-  )
-}
+    <div className="dashboard-container">
+      <button onClick={handleLogout}>Logout</button>
+     
+    <Services/>
+    </div>
+  );
+};
 
 export default Services;
