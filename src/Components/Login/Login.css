@@ -1,0 +1,38 @@
+
+.login-container {
+    background-color: yellow;
+    width: 30%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    border-inline: 1px solid black;
+    margin-left: 450px;
+    margin-top: 90px;
+
+
+}
+
+.login-title{
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: black; 
+     margin-top: 20px;
+}
+.login-label{
+    font-size: 1.6rem;
+     margin-top: 20px;
+}
+
+.login-input{
+    width: 200px;
+    height: 30px;
+     margin-top: 20px;
+}
+
+.login-button{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+}
