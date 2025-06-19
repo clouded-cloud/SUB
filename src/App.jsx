@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter , Route, Routes } from 'react-router-dom';
 import Login from './Components/Login/Login';
-import Dashboard from './Components/Dashboard/Dashboard';
 import Navbar from './Components/Navpage/Navpage';
 import HomePage from './Components/Homepage/Homepage';
 import About from './Components/AboutUs/AboutUs';
@@ -22,14 +21,14 @@ const App = () => {
           <Route path="/HomePage" element={<HomePage />} />
           <Route path="/AboutUs" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Services" element={<Services />} />
+          <Route path="/Services" element={<Services setAuth={setAuth} />} />
           <Route path="/Login" element={<Login setAuth={setAuth} />} />
         </Routes>
    
     
       <Routes>
-        <Route path="/dashboard" element={auth ? <Dashboard setAuth={setAuth} /> : <Login setAuth={setAuth} />} />
-        <Route path="/" element={auth ? <Dashboard setAuth={setAuth} /> : <Login setAuth={setAuth} />} />
+        <Route path="/Services" element={auth ? <Services setAuth={setAuth} /> : <Login setAuth={setAuth} />} />
+        <Route path="/" element={auth ? <Services setAuth={setAuth} /> : <Login setAuth={setAuth} />} />
 
       </Routes>
     </BrowserRouter>

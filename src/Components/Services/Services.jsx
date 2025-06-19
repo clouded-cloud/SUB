@@ -13,10 +13,9 @@ const Services = ({ setAuth }) => {
   };
 
   return (
-    <div className="dashboard-container">
+    <div className="services-container">
       <button onClick={handleLogout}>Logout</button>
-     
-    <Services/>
+   
     </div>
   );
 };
