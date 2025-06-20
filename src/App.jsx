@@ -7,6 +7,7 @@ import HomePage from './Components/Homepage/Homepage';
 import About from './Components/AboutUs/AboutUs';
 import Contact from './Components/Contact/Contact';
 import Services from './Components/Services/Services';
+import Footer from './Components/Footer/Footer';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 
     <BrowserRouter>
     <Navbar/>
+    <Footer/>
   
       <Routes>
           <Route path="/HomePage" element={<HomePage />} />

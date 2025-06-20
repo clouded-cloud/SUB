@@ -1,11 +1,12 @@
 
 import React from 'react'
+import './Homepage.css';
 
 
 const Homepage = () => {
   return (
     <>
-        <img src="\images\hero.webp" alt="Description" />
+        <img className="hero-image" src="\images\hero.webp" alt="Description" />
        
     </>
   );
