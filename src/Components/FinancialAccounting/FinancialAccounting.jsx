@@ -3,7 +3,10 @@ import './FinancialAccounting.css';
 
 const FinancialAccounting = () => {
   return (
-    <div>Financial Accounting</div>
+    <div>
+      <h1>Financial Accounting</h1>
+      
+    </div>
   )
 }
 
