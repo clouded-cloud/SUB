@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
  const SubNavpage = () => {
   return (
-    <div>
+   
        
         <nav>
             <ul>
@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
             </ul>
             </nav>
 
-    </div>
+ 
   )
 }
 

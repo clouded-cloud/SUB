@@ -5,9 +5,11 @@ import Login from './Components/Login/Login';
 import Navbar from './Components/Navpage/Navpage';
 import HomePage from './Components/Homepage/Homepage';
 import About from './Components/AboutUs/AboutUs';
-import Contact from './Components/Contact/Contact';
+
 import Services from './Components/Services/Services';
 import Dashboard from './Components/Dashboard/Dashboard';
+import ServicesPage from './Components/ServicesPage/ServicesPage';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -18,6 +20,7 @@ const App = () => {
 
     <BrowserRouter>
     <Navbar/>
+   
 
    
   
@@ -25,18 +28,21 @@ const App = () => {
       <Routes>
           <Route path="/HomePage" element={<HomePage />} />
           <Route path="/AboutUs" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Services/*" element={<Services />} />
-          <Route path="/Login" element={<Login setAuth={setAuth} />} />
+         
+          <Route path="/services/*" element={<Services setAuth={setAuth}/>} />
+        
+ 
         </Routes>
 
      
 
       <Routes>
-        <Route path="/Services" element={auth ? <Dashboard setAuth={setAuth} /> : <Login setAuth={setAuth} />} />
+        <Route path="/services" element={auth ? <Dashboard setAuth={setAuth} /> : <Login setAuth={setAuth} />} />
         <Route path="/" element={auth ? <login setAuth={setAuth} /> : <Login setAuth={setAuth} />} />
 
       </Routes>
+
+       <Footer/>
     </BrowserRouter>
   );
 };
