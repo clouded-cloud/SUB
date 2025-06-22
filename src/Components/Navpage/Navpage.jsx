@@ -3,7 +3,7 @@ import React from 'react'
 import './Navpage.css';
 import { Link } from 'react-router-dom';
 
-export const Navpage = () => {
+ const Navpage = () => {
   return (
     <div>
         <nav className="nav">

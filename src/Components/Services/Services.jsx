@@ -1,28 +1,27 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './Services.css'; 
+import SubNavpage from '../SubNavpage/SubNavpage';
+import FinancialAccounting from '../FinancialAccounting/FinancialAccounting';
+import StockIntake from '../StockIntake/StockIntake';
 
 
-
-
-const Services = ({ setAuth }) => {
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    setAuth(false);
-    navigate('/');
-  };
+const Services = () => {
+   const [auth, setAuth] = useState(false);
 
   return (
-    <div className="services-container">
-      <button onClick={handleLogout}>Logout</button>
-        <h1>Our services</h1>
-            <ul>
-                <Link to="/FinancialAccounting">Financial Accounting</Link>
-                <Link to="/StockIntake">Stock Intake</Link>
-            </ul>
-    </div>
+    <>
+  <SubNavpage/>
+    
+         <Routes>
+          <Route path="FinancialAccounting" element={ <FinancialAccounting />} />
+          <Route path="StockIntake" element={ <StockIntake />} />
+        </Routes>
+
+</>
+       
+
   );
 };
 

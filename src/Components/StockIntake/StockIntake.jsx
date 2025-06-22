@@ -4,6 +4,7 @@ import StockList from './StockList';
 import StockForm from './StockForm';
 import StockMovement from './StockMovement';
 import StockAlerts from './StockAlerts';
+import './StockIntake.css'; 
 
 
 function StockIntake() {
@@ -11,7 +12,7 @@ function StockIntake() {
   const [activeTab, setActiveTab] = useState('list');
   const [editingStock, setEditingStock] = useState(null);
 
-  // Load sample data or from API
+  // API
   useEffect(() => {
     const sampleData = [
       {

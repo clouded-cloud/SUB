@@ -2,9 +2,13 @@
 import React from 'react'
 import './AboutUs.css';
 
-export const AboutUs = () => {
+
+const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div>AboutUs
+    
+   
+    </div>
   )
 }
  export default AboutUs;

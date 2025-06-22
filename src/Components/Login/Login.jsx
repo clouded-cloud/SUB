@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
-import Navpage from '../Navpage/Navpage'; // Adjust the import path as necessary
+import Navpage from '../Navpage/Navpage'; 
 
 const Login = ({ setAuth }) => {
   const [username, setUsername] = useState('');
