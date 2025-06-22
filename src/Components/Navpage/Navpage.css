@@ -12,7 +12,7 @@ nav{
     color: black;
     display: flex;
     align-items: center;
-    float: right;
+    float: left;
 }
 
 nav a{

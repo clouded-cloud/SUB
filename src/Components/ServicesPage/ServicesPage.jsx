@@ -14,25 +14,25 @@ const ServicesPage = () => {
 
   return (
     <>
+    <div className={`services-page ${auth ? 'authenticated' : ''}`}></div>
 <h1>Our services</h1>
+<SubNavpage className="sub-nav" />
+ 
 
-  <SubNavpage/>
+ 
     
          <Routes>
           <Route path="FinancialAccounting" element={ <FinancialAccounting />} />
           <Route path="StockIntake" element={ <StockIntake />} />
         <Route index element={
-            <div className="service-default">
+           <div className="service-default">
               <h2>Please select a service</h2>
               <p>Choose from the options above to learn more about our services.</p>
             </div>
           } />
            </Routes>
-    
-
 </>
        
-
   );
 };
 

@@ -1,1 +1,3 @@
-
+services-page:not(.authenticated) .sub-nav {
+  display: none;
+}
