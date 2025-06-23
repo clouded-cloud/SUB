@@ -17,20 +17,20 @@ function StockIntake() {
     const sampleData = [
       {
         id: 1,
-        name: 'Widget A',
+        name: 'Patron Silver Tequila winebox kenya Quick View',
         quantity: 150,
         supplier: 'Acme Corp',
-        lastDeliveryDate: '2023-05-15',
-        price: 12.99,
+        lastDeliveryDate: '2025-05-15',
+        price: 10715,
         minLevel: 50
       },
       {
         id: 2,
-        name: 'Gadget B',
+        name: 'Clase Azul Gold Tequila 0.7L',
         quantity: 75,
         supplier: 'Tech Supplies',
-        lastDeliveryDate: '2023-06-01',
-        price: 24.50,
+        lastDeliveryDate: '2025-06-01',
+        price: 75885,
         minLevel: 30
       }
     ];

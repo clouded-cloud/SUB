@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom';
-
 import './Services.css';
 
-export const Services = () => {
+const Services = () => {
   return (
     <div>
-             <Outlet />
+             
+            
       </div>
   )
 }

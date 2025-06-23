@@ -11,6 +11,7 @@ import ServicesPage from './Components/ServicesPage/ServicesPage';
 import FinancialAccounting from './Components/FinancialAccounting/FinancialAccounting';
 import StockIntake from './Components/StockIntake/StockIntake';
 import Footer from './Components/Footer/Footer';
+import SubNavpage from './Components/SubNavpage/SubNavpage';
 
 
 
@@ -21,15 +22,17 @@ const App = () => {
 
     <BrowserRouter>
     <Navbar/>
+    
    
       <Routes>
           <Route path="/HomePage" element={<HomePage />} />
-          <Route path="/AboutUs" element={<About />} />
-          <Route path="/services/*" element={<ServicesPage/>} />
-          <Route index element={<ServicesPage />} />
-          <Route path="FinancialAccounting" element={<FinancialAccounting />} />
-          <Route path="StockIntake" element={<StockIntake />} />
- 
+          <Route path="/AboutUs" element={<About/>} />
+          <Route path="/services/*" element={<Services setAuth={setAuth}/>} >
+          <Route path='FinancialAccounting' element={<FinancialAccounting/>}/>
+          <Route path='StockIntake' element={<StockIntake/>}/>
+          </Route>
+      
+          
         </Routes>
 
      

@@ -37,7 +37,7 @@ function TransactionList({ transactions, categories, onEdit, onDelete, setActive
                 </span>
               </td>
               <td className={transaction.type}>
-                {transaction.type === 'income' ? '+' : '-'}${transaction.amount.toFixed(2)}
+                {transaction.type === 'income' ? '+' : '-'}ksh{transaction.amount.toFixed(2)}
               </td>
               <td>
                 <button onClick={() => {

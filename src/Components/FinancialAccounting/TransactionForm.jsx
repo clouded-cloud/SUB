@@ -90,7 +90,7 @@ function TransactionForm({ transaction, categories, onSubmit, onCancel }) {
         </div>
         
         <div className="form-group">
-          <label>Amount ($):</label>
+          <label>Amount (ksh):</label>
           <input 
             type="number" 
             name="amount" 

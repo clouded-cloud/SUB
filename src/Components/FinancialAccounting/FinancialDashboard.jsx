@@ -88,15 +88,15 @@ function FinancialDashboard({ transactions, categories }) {
       <div className="summary-cards">
         <div className="card income">
           <h3>Total Income</h3>
-          <p>${totalIncome.toFixed(2)}</p>
+          <p>ksh{totalIncome.toFixed(2)}</p>
         </div>
         <div className="card expenses">
           <h3>Total Expenses</h3>
-          <p>${totalExpenses.toFixed(2)}</p>
+          <p>ksh{totalExpenses.toFixed(2)}</p>
         </div>
         <div className={`card balance ${balance >= 0 ? 'positive' : 'negative'}`}>
           <h3>Balance</h3>
-          <p>${balance.toFixed(2)}</p>
+          <p>ksh{balance.toFixed(2)}</p>
         </div>
       </div>
       

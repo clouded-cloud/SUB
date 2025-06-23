@@ -12,12 +12,12 @@ const Login = ({ setAuth }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Simple authentication check
-    if (username === 'admin' && password === 'password') {
+    if (username === 'admin' && password === 'passwaord') {
       setAuth(true);
-      navigate('/Services'); // Navigate to the Services page
+      navigate('/Services'); 
     } else if (username === 'user' && password === 'userpass') {
       setAuth(true);
-      navigate('/Services'); // Navigate to the Services page
+      navigate('/Services');
     } else {
       alert('Invalid credentials');
     }
